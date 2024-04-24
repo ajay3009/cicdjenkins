@@ -83,13 +83,13 @@ sudo chmod +x /opt/sonar-scanner/bin/sonar-scanner
 
 def analyzeCodeQuality() {
 sh '''
-/opt/sonar-scanner/bin/sonar-scanner -Dsonar.projectKey=owtest23_sample-java-sonar \
--Dsonar.organization=owtest23 \
+/opt/sonar-scanner/bin/sonar-scanner -Dsonar.projectKey=ajay3009_javaproj \
+-Dsonar.organization=ajay3009 \
 -Dsonar.qualitygate.wait=true \
 -Dsonar.qualitygate.timeout=300 \
 -Dsonar.sources=src/main/java/ \
 -Dsonar.java.binaries=target/classes \
 -Dsonar.host.url=https://sonarcloud.io \
--Dsonar.login=65558d8b45ebd4758f3e8d49b8f3582f8707306
+-Dsonar.login=01cb64d55a6d26a1dd8480cec00e1d1a84c25a0a
 '''
 }
