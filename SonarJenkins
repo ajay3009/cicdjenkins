@@ -31,11 +31,11 @@ addGenerateReport()
 }
 }
 
-stage('Install SonarQube CLI') {
-steps {
-installSonarQubeCLI()
-}
-}
+//stage('Install SonarQube CLI') {
+//steps {
+//installSonarQubeCLI()
+//}
+//}
 
 stage('Analyzing Code Quality') {
 steps {
